@@ -4,7 +4,7 @@ import { Order } from '@prisma/client';
 
 @Injectable()
 export class OrdersService {
-  constructor(private prismaService: PrismaService) { }
+  constructor(private prismaService: PrismaService) {}
 
   public getAll(): Promise<Order[]> {
     return this.prismaService.order.findMany();

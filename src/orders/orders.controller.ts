@@ -13,7 +13,7 @@ export class OrdersController {
   }
 
   @Get('/')
-  getAll(): any {
+  getAll() {
     return this.ordersService.getAll();
   }
 
